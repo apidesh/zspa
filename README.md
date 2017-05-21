@@ -23,6 +23,7 @@ Installation Guide
 8. Install webpack
    npm install webpack -g
 9. Webpack Build
+    Open console and go to the project root folder
     - webpack --config webpack.config.vendor.js
     - webpack --config webpack.config.js
    The output file will store inton ./ClientApp/dist and ./wwwroot/dist
