@@ -12,7 +12,7 @@ Installation Guide
       - npm install -g npm
 4. Install webpack
       - npm install webpack -g
-5. Install EF Core 
+5. Install EF Core with Nuget Package Console
     - Install-Package Microsoft.EntityFrameworkCore.SqlServer
     - Install-Package Microsoft.EntityFrameworkCore.Tools
 
