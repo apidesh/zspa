@@ -27,6 +27,9 @@ Installation Guide
     - webpack --config webpack.config.js
    The output file will store inton ./ClientApp/dist and ./wwwroot/dist
    
-10. Start project with Visual Studio 2015/2017 from ZSPA.sln  or Visual Studio Code
+10. Start working with the project 
+    - 10.1 Visual Studio 2015/2017 from ZSPA.sln 
+    - 10.2 Visual Studio Code + Console command "dotnet run"
+ 
 
    
