@@ -1,0 +1,39 @@
+<h1>Enterprise List</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<div class="container">
+   <div class="form-group">
+        <label for="enterpriseid">Enterprise ID:</label>
+        <input type="text"  [(ngModel)]="model.id" placeholder="enterprise id" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="enterprisename">Enterprise Name:</label>
+        <input type="text"  [(ngModel)]="model.name" placeholder="enterprise name"  class="form-control">
+    </div>
+
+    <div class="btn btn-default" (click)="onSubmitSearch()">Search</div>
+    <div class="btn btn-default" (click)="onSubmitGetList()">Get All Item</div> 
+    <div class="btn btn-default" (click)="onSubmitAddData()">Add</div> 
+    
+</div>
+<div class="container">
+    <table class='table' *ngIf="dataList">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Enterprise ID</th>
+                <th>Enterprise Name</th>
+                <th>Active</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of dataList">
+                <td>{{ data.id }}</td>
+                <td>{{ data.enterpriseID }}</td>
+                <td>{{ data.enterpriseName }}</td>
+                <td>{{ data.isActive }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
